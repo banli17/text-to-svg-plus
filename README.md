@@ -12,15 +12,15 @@ Based on the shrhdk's [text-to-svg](https://github.com/shrhdk/text-to-svg) libra
 const textToSvgPlus = require("text-to-svg-plus");
 
 const options = {
-  text: "窗前明月光，疑似地上霜。举头望明月，低头思故乡。,
+  text: "窗前明月光，疑似地上霜。举头望明月，低头思故乡。",
   fontSize: 30,
   width: 500,
   height: 500,
-  direction: 'ttb',
+  direction: "ttb",
   letterSpacing: 1,
   color: "#000000",
-  textAlign: 'center',
-  fontWeight: 'bold',
+  textAlign: "center",
+  fontWeight: "bold",
   opacity: 0.2,
   fontFamily: "",
   borderWidth: 2,
@@ -34,6 +34,11 @@ const options = {
 
 new Svg(options).toFile(path.join(__dirname, "dist"));
 ```
+
+## methods
+
+- toFile()
+- toBuffer()
 
 ## options
 
